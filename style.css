@@ -1,0 +1,73 @@
+
+
+/* element Selector */
+/* 
+body{
+    background-color: yellow;
+} */
+
+/* . is for class */
+/* 
+.intro{
+    color: red;
+} */
+
+/* # for ids */
+/* 
+#second{
+    font-size: 20px ;
+} */
+
+/* multiple selector */
+/* 
+.intro, .about{
+    background-color: aqua;
+} */
+
+/* nested selector */
+/* 
+#first p{
+    font-family: 'Roboto', sans-serif ;
+} */
+
+body{
+    color: red;
+}
+
+.title{
+    font-size: 6rem;
+}
+
+.subtitle{
+    font-size: 4rem;
+}
+
+@media (max-width: 400px){
+    .title{
+        color: green;
+    }
+}
+
+@media (max-width: 400px){
+    .subtitle{
+        color: black;
+    }
+}
+
+@media (orientation: landscape){
+    .title{
+        color: pink;
+    }
+}
+@media (orientation: portrait) and (max-width: 500px){
+    .title{
+        color: pink;
+    }
+}
+/* for or statement */
+@media (orientation: portrait), (min-width: 500px){
+    .title{
+        color: pink;
+    }
+}
+

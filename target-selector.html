@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Selector</title>
+    <style>
+        /* Direct child */
+        div > p{
+            background: #ddd;
+        }
+
+        /* directly after */
+        /* div + p this means the element div is write before p thats y last line is affected
+        or in simple words its called SIBLING( MEANS ON SAME LEVEL) */
+        div + p{
+            background: #333;
+            color: white;
+        }
+
+        /* By aTTRIBUTE */
+        a[target] {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- this p is direct child of div -->
+        <p>Lorem ipsum dolor sit amet.</p>
+        <!-- li{item $}*3 krne se khud se item 1 to item 3 tk likha jata h  -->
+        <ul>
+            <li>item 1</li>
+            <!-- this p is not direct child of div -->
+            <li><p>item 2</p></li>
+            <li>item 3</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <a href="#">Page 1</a> <a href="http://google.com" target="_blank">Google</a>
+
+
+    
+</body>
+</html>
