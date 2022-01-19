@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+        /* jaise form me koi koi jagah * laga hota hai taki wo field required h uske liye yeh likhna prega */
+        .is-required:after{
+            content:'*';
+            color: red;
+        }
+        /* phle lagane ke lie before use kro */
+        /* .is-required:before{
+            content:'*';
+        } */
+    </style>
+</head>
+<body>
+    <label class="is-required" for="name">Name</label>
+    <input type="text" name="" id="name">
+</body>
+</html>
